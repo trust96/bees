@@ -1,0 +1,111 @@
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  @apply bg-primary;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @apply px-4 py-2;
+}
+.bar {
+  @apply bg-white lg:bg-transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  @apply pt-24;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 0.15s ease-in-out;
+  overflow-y: scroll;
+  @apply lg:translate-x-0 lg:static lg:z-0 lg:w-auto lg:h-auto lg:overflow-auto lg:p-0;
+}
+.bar.active {
+  transform: translateX(0);
+  transition: transform 0.15s ease-in-out;
+}
+.list {
+  @apply mb-4 lg:flex lg:mb-0 lg:relative;
+  @apply basis-full flex-shrink-0  lg:basis-auto;
+}
+.item {
+}
+.item:hover {
+  @apply bg-gray-200 lg:bg-transparent;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply py-4 lg:px-4;
+  @apply text-3xl lg:text-lg;
+  outline: none;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @apply lg:flex-row lg:items-center;
+  @apply basis-full;
+  @apply mb-3 lg:mb-0;
+}
+.container {
+  outline: none;
+  @apply lg:hidden;
+}
+.menu {
+}
+.menu_item_one,
+.menu_item_two,
+.menu_item_three {
+  height: 5px;
+  @apply rounded-sm;
+  width: 48px;
+  @apply bg-nero;
+}
+
+.menu_item_one {
+  transform: translateY(-4px) rotate(0deg);
+  transition: transform 0.15s;
+}
+.menu_item_two {
+  opacity: 1;
+  transition: opacity 0.15s;
+}
+.menu_item_three {
+  transform: translateY(4px) rotate(0deg);
+  transition: transform 0.15s;
+}
+.top {
+  transform: translateY(5px) rotate(45deg);
+  transition: transform 0.15s;
+}
+.center {
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.bottom {
+  transform: translateY(-5px) rotate(-45deg);
+  transition: transform 0.15s;
+}
+.icon:hover {
+  @apply text-gray-800;
+}
+
+.slider {
+  @apply hidden lg:block;
+  height: 5px;
+  width: 20px;
+  @apply bg-purple-700 rounded-full;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.25s;
+}

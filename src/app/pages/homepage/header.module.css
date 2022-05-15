@@ -1,0 +1,24 @@
+.underline::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50px;
+  @apply bg-gray-500 mt-4;
+}
+
+.flower1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.imgContainer {
+  width: 500px;
+}
+
+.flower2 {
+  max-width: 500px;
+  right: 20%;
+  height: auto;
+  position: absolute;
+  @apply -translate-y-1/4;
+}

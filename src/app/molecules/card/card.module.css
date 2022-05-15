@@ -1,0 +1,14 @@
+.card {
+  @apply p-2 w-full;
+  @apply basis-full;
+}
+@screen md {
+  .card {
+    flex-basis: 48%;
+  }
+}
+@screen 2xl {
+  .card {
+    flex-basis: 32%;
+  }
+}

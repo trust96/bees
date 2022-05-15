@@ -1,0 +1,55 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @apply rounded-full;
+}
+.label {
+  @apply text-base;
+  @apply font-light;
+  text-transform: capitalize;
+  cursor: pointer;
+  @apply whitespace-nowrap;
+}
+
+.primary {
+  @apply bg-gray-900;
+  @apply text-white;
+}
+.primary:hover {
+  @apply bg-black;
+}
+.primary:active {
+  @apply bg-gray-700;
+}
+.primary:focus {
+  outline: none;
+}
+.secondary {
+  @apply border-2 border-black;
+  @apply bg-white;
+}
+.secondary:hover {
+  @apply bg-gray-200;
+}
+.secondary:active {
+  @apply bg-white;
+}
+.secondary:focus {
+  outline: none;
+}
+.small {
+  @apply px-2 py-1;
+}
+
+.medium {
+  @apply px-4 py-2;
+}
+
+.large {
+  @apply px-5 py-3;
+}
+
+.block {
+  @apply w-full;
+}

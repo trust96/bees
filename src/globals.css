@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  outline: none !important;
+}
+body {
+  @apply bg-primary;
+  @apply font-light;
+}
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.cls-1,
+.cls-2 {
+  opacity: 0.99;
+}
